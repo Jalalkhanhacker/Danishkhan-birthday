@@ -1,402 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Danish Khan 💙</title>
 
-  <title>Happy Birthday Danish Khan 💙</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- ================= COUNTDOWN SCREEN ================= -->
+<!-- COUNTDOWN -->
+<section id="countdownScreen">
 
-  <section id="countdownScreen">
+  <div class="stars"></div>
 
-    <div class="stars"></div>
+  <div class="countdownBox">
 
-    <div class="countdownBox">
+    <div class="badge">
+      20 AUGUST • A SPECIAL DAY
+    </div>
 
-      <div class="badge">
-        20 AUGUST • A SPECIAL DAY
+    <div class="giftIcon">🎁</div>
+
+    <h1>Danish Khan</h1>
+
+    <p class="subtitle">
+      Something special is waiting for you...
+    </p>
+
+    <div class="timer">
+
+      <div class="time">
+        <span id="days">00</span>
+        <small>DAYS</small>
       </div>
 
-      <div class="giftIcon">
-        🎁
+      <div class="colon">:</div>
+
+      <div class="time">
+        <span id="hours">00</span>
+        <small>HOURS</small>
       </div>
 
-      <h1>Danish Khan</h1>
+      <div class="colon">:</div>
 
-      <p class="subtitle">
-        Something special is waiting for you...
-      </p>
-
-      <div class="timer">
-
-        <div class="time">
-          <span id="days">00</span>
-          <small>DAYS</small>
-        </div>
-
-        <div class="colon">:</div>
-
-        <div class="time">
-          <span id="hours">00</span>
-          <small>HOURS</small>
-        </div>
-
-        <div class="colon">:</div>
-
-        <div class="time">
-          <span id="minutes">00</span>
-          <small>MINUTES</small>
-        </div>
-
-        <div class="colon">:</div>
-
-        <div class="time">
-          <span id="seconds">00</span>
-          <small>SECONDS</small>
-        </div>
-
+      <div class="time">
+        <span id="minutes">00</span>
+        <small>MINUTES</small>
       </div>
 
-      <p id="countdownText">
-        The celebration unlocks on 20 August.
-      </p>
+      <div class="colon">:</div>
+
+      <div class="time">
+        <span id="seconds">00</span>
+        <small>SECONDS</small>
+      </div>
+
+    </div>
+
+    <p id="countdownText">
+      The celebration unlocks on 20 August.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- MAIN BIRTHDAY WEBSITE -->
+<main id="birthdayWebsite">
+
+  <canvas id="fireworks"></canvas>
+  <div id="floatingItems"></div>
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="badge">
+      20 AUGUST • SPECIAL DAY
+    </div>
+
+    <p class="premiumText">
+      A PREMIUM BIRTHDAY EXPERIENCE
+    </p>
+
+    <h2>
+      Happy Birthday
+      <br>
+      <span>Danish Khan</span>
+    </h2>
+
+    <div class="goldLine"></div>
+
+    <p class="heroMessage">
+      To my brother — may Allah fill your new year with
+      happiness, barakah, success and countless
+      beautiful memories.
+    </p>
+
+    <div class="buttons">
+
+      <button id="surpriseButton">
+        🎁 Open Surprise
+      </button>
+
+      <button id="voiceButton">
+        🔊 Birthday Wish
+      </button>
 
     </div>
 
   </section>
 
 
-  <!-- ================= MAIN WEBSITE ================= -->
+  <!-- GIFT -->
+  <section class="giftSection">
 
-  <main id="birthdayWebsite">
+    <p class="sectionTitle">
+      🎁 A LITTLE SURPRISE
+    </p>
 
-    <!-- Animated background -->
-    <canvas id="fireworks"></canvas>
+    <div
+      id="gift"
+      class="gift"
+      tabindex="0"
+      role="button"
+      aria-label="Open birthday gift"
+    >
 
-    <div id="floatingItems"></div>
+      <div class="giftLid"></div>
 
+      <div class="giftBody">
 
-    <!-- ================= HERO ================= -->
-
-    <section class="hero">
-
-      <div class="badge">
-        20 AUGUST • SPECIAL DAY
-      </div>
-
-      <p class="premiumText">
-        A PREMIUM BIRTHDAY EXPERIENCE
-      </p>
-
-      <h2>
-        Happy Birthday
-        <br>
-        <span>Danish Khan</span>
-      </h2>
-
-      <div class="goldLine"></div>
-
-      <p class="heroMessage">
-        A special celebration for an amazing brother.
-        May Allah bless your life with happiness,
-        success, peace and countless beautiful memories.
-      </p>
-
-      <div class="buttons">
-
-        <button id="surpriseButton">
-          🎁 Open Surprise
-        </button>
-
-        <button id="voiceButton">
-          🔊 Birthday Wish
-        </button>
+        <div class="verticalRibbon"></div>
+        <div class="horizontalRibbon"></div>
 
       </div>
-
-    </section>
-
-
-    <!-- ================= GIFT ================= -->
-
-    <section class="giftSection">
-
-      <p class="sectionTitle">
-        A LITTLE SURPRISE
-      </p>
-
-      <div
-        id="gift"
-        class="gift"
-        tabindex="0"
-      >
-
-        <div class="giftLid"></div>
-
-        <div class="giftBody">
-
-          <div class="verticalRibbon"></div>
-
-          <div class="horizontalRibbon"></div>
-
-        </div>
-
-      </div>
-
-      <h3 id="giftText">
-        Tap the gift 🎁
-      </h3>
-
-    </section>
-
-
-    <!-- ================= MESSAGE ================= -->
-
-    <section class="messageSection">
-
-      <p class="sectionTitle">
-        💌 BIRTHDAY MESSAGE
-      </p>
-
-      <h2>
-        Dear Brother,
-      </h2>
-
-      <p>
-        Today is a celebration of an incredible person.
-        May Allah bless you with a long, healthy and
-        successful life.
-      </p>
-
-      <p>
-        May He grant you happiness, peace and strength
-        in every step you take.
-      </p>
-
-      <p>
-        Thank you for always being a caring and supportive
-        brother. I'm grateful for every memory we've
-        shared together.
-      </p>
-
-      <p>
-        May all your dreams come true, and may this new
-        year of your life be filled with countless blessings.
-      </p>
-
-      <div class="signature">
-        Made with ❤️ by Jalal Ahmad
-      </div>
-
-    </section>
-
-
-    <!-- ================= PHOTO SLIDESHOW ================= -->
-
-    <section class="gallerySection">
-
-      <p class="sectionTitle">
-        📸 MEMORIES
-      </p>
-
-      <h2>
-        Beautiful Moments
-      </h2>
-
-      <div class="slideshow">
-
-        <button
-          id="previous"
-          class="slideButton"
-        >
-          ‹
-        </button>
-
-        <div class="slides">
-
-          <img
-            src="images/1.jpg"
-            class="slide active"
-            alt="Danish memory 1"
-          >
-
-          <img
-            src="images/2.jpg"
-            class="slide"
-            alt="Danish memory 2"
-          >
-
-          <img
-            src="images/3.jpg"
-            class="slide"
-            alt="Danish memory 3"
-          >
-
-          <img
-            src="images/4.jpg"
-            class="slide"
-            alt="Danish memory 4"
-          >
-
-          <img
-            src="images/5.jpg"
-            class="slide"
-            alt="Danish memory 5"
-          >
-
-          <img
-            src="images/6.jpg"
-            class="slide"
-            alt="Danish memory 6"
-          >
-
-        </div>
-
-        <button
-          id="next"
-          class="slideButton"
-        >
-          ›
-        </button>
-
-      </div>
-
-      <div id="dots"></div>
-
-    </section>
-
-
-    <!-- ================= CAKE ================= -->
-
-    <section class="cakeSection">
-
-      <p class="sectionTitle">
-        🎂 MAKE A WISH
-      </p>
-
-      <div class="cake">
-
-        <div class="flame"></div>
-
-        <div class="candle"></div>
-
-        <div class="cakeTop"></div>
-
-        <div class="cakeMiddle"></div>
-
-        <div class="cakeBottom"></div>
-
-      </div>
-
-      <h2>
-        Happy Birthday, Danish! 💙
-      </h2>
-
-      <p>
-        May your new year be brighter,
-        happier and more successful.
-      </p>
-
-      <button id="fireworkButton">
-        🎆 Launch Fireworks
-      </button>
-
-    </section>
-
-
-    <!-- ================= FINAL ================= -->
-
-    <section class="finalSection">
-
-      <div class="bigHeart">
-        💙
-      </div>
-
-      <h2>
-        Stay Blessed, Brother
-      </h2>
-
-      <p>
-        May Allah protect you,
-        guide you and bless your future.
-      </p>
-
-      <div class="signature">
-        Made with ❤️ by Jalal Ahmad
-      </div>
-
-    </section>
-
-
-    <footer>
-
-      <div class="goldLine"></div>
-
-      <p>
-        DANISH KHAN • 20 AUGUST
-      </p>
-
-      <small>
-        Premium Birthday Edition
-      </small>
-
-    </footer>
-
-  </main>
-
-
-  <!-- ================= POPUP ================= -->
-
-  <div id="popup">
-
-    <div class="popupBox">
-
-      <button id="closePopup">
-        ×
-      </button>
-
-      <div class="popupGift">
-        🎁
-      </div>
-
-      <h2>
-        Surprise! 🎉
-      </h2>
-
-      <p>
-        Happy Birthday Danish Khan!
-        May Allah fill your life with happiness,
-        success, peace and countless blessings.
-      </p>
-
-      <button id="popupWish">
-        🔊 Hear Wish
-      </button>
 
     </div>
 
-  </div>
+    <h3 id="giftText">
+      Tap the gift 🎁
+    </h3>
+
+  </section>
 
 
-  <!-- Optional music -->
-  <audio
-    id="birthdayMusic"
-    loop
-  >
-    <source
-      src="music/birthday.mp3"
-      type="audio/mpeg"
-    >
-  </audio>
+  <!-- MESSAGE -->
+  <section class="messageSection">
+
+    <p class="sectionTitle">
+      💌 BIRTHDAY MESSAGE
+    </p>
+
+    <h2>Dear Brother,</h2>
+
+    <p>
+      Today is a celebration of an incredible person.
+      May Allah bless you with a long, healthy and
+      successful life.
+    </p>
+
+    <p>
+      May He grant you happiness, peace and strength
+      in every step you take.
+    </p>
+
+    <p>
+      Thank you for always being a caring and supportive
+      brother. I'm grateful for every memory we've
+      shared together.
+    </p>
+
+    <p>
+      May all your dreams come true, and may this new
+      year of your life be filled with countless blessings.
+    </p>
+
+    <div class="finalWish">
+      Happy Birthday, Danish Khan! 💙🎂
+    </div>
+
+    <p class="made">
+      Made with ❤️ by Jalal Ahmad
+    </p>
+
+  </section>
 
 
-  <script src="script.js?v=3"></script>
+  <!-- PHOTOS -->
+  <section class="photosSection">
+
+    <p class="sectionTitle">
+      📸 MEMORIES
+    </p>
+
+    <h2>Beautiful Memories</h2>
+
+    <div class="slideshow">
+
+      <img src="images/1.jpg" alt="Danish memory 1">
+      <img src="images/2.jpg" alt="Danish memory 2">
+      <img src="images/3.jpg" alt="Danish memory 3">
+      <img src="images/4.jpg" alt="Danish memory 4">
+      <img src="images/5.jpg" alt="Danish memory 5">
+      <img src="images/6.jpg" alt="Danish memory 6">
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p>🎂 Happy Birthday Danish Khan 💙</p>
+    <small>20 August • A Special Day</small>
+  </footer>
+
+</main>
+
+
+<script src="script.js?v=4"></script>
 
 </body>
 </html>
