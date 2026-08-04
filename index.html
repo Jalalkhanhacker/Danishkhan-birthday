@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#07111f">
+  <title>Happy Birthday Danish Khan 💙</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="stars"></canvas>
+  <div class="aurora aurora-a"></div>
+  <div class="aurora aurora-b"></div>
+
+  <button class="music-btn" id="musicBtn" aria-label="Play birthday music">♫ <span>Music</span></button>
+  <button class="sound-btn" id="soundBtn" aria-label="Toggle sound">🔊</button>
+
+  <main>
+    <section class="hero section">
+      <div class="badge">20 AUGUST • A SPECIAL DAY</div>
+      <p class="eyebrow">A PREMIUM BIRTHDAY EXPERIENCE</p>
+      <h1>Happy Birthday <span>Danish Khan</span></h1>
+      <p class="typing" id="typing"></p>
+      <div class="hero-line"></div>
+      <p class="intro">To my brother — may Allah fill your new year with happiness, barakah, success and countless beautiful memories.</p>
+
+      <div class="countdown-card">
+        <p class="countdown-title">COUNTDOWN TO YOUR DAY</p>
+        <div class="countdown">
+          <div><strong id="days">00</strong><small>Days</small></div>
+          <i>:</i>
+          <div><strong id="hours">00</strong><small>Hours</small></div>
+          <i>:</i>
+          <div><strong id="minutes">00</strong><small>Minutes</small></div>
+          <i>:</i>
+          <div><strong id="seconds">00</strong><small>Seconds</small></div>
+        </div>
+      </div>
+
+      <button class="gold-btn" id="openBtn"><span>Open Your Surprise</span> ✦</button>
+    </section>
+
+    <section class="surprise section hidden" id="surprise">
+      <div class="section-label">FOR MY BROTHER</div>
+      <h2>A Little Surprise For <span>Danish</span></h2>
+
+      <div class="gift-wrap" id="giftWrap" role="button" tabindex="0" aria-label="Open gift">
+        <div class="gift-glow"></div>
+        <div class="gift-lid"><div class="ribbon-v"></div></div>
+        <div class="gift-box">
+          <div class="ribbon-v"></div><div class="ribbon-h"></div>
+        </div>
+        <div class="gift-bow"><b></b><b></b><i></i></div>
+      </div>
+      <p class="tap-note">Tap the gift to reveal your birthday message</p>
+
+      <div class="message-card" id="messageCard">
+        <div class="seal">D</div>
+        <p class="mini">💌 BIRTHDAY MESSAGE</p>
+        <h3>Happy Birthday, Danish Khan! 💙</h3>
+        <p>Dear Brother,</p>
+        <p>Today is a celebration of an incredible person. May Allah bless you with a long, healthy, successful and peaceful life. May He grant you happiness, strength and barakah in every step you take.</p>
+        <p>Thank you for being a caring and supportive brother. I'm grateful for every memory we've shared together.</p>
+        <p>May all your dreams come true, and may this new year of your life be filled with countless blessings.</p>
+        <p class="final-line">Happy Birthday! Stay blessed and keep smiling. 🎉</p>
+        <div class="signature">Made with <span>♥</span> by Jalal Ahmad</div>
+      </div>
+    </section>
+
+    <section class="gallery section">
+      <div class="section-label">MEMORIES</div>
+      <h2>Moments Worth <span>Remembering</span></h2>
+      <div class="gallery-frame">
+        <button class="gallery-arrow prev" id="prev">‹</button>
+        <div class="slide"><img id="slideImg" src="images/1.jpg" alt="Danish Khan memory"></div>
+        <button class="gallery-arrow next" id="next">›</button>
+        <div class="dots" id="dots"></div>
+      </div>
+      <p class="gallery-caption" id="caption">A beautiful memory, forever worth keeping.</p>
+    </section>
+
+    <section class="wish section">
+      <div class="wish-card">
+        <div class="corner c1"></div><div class="corner c2"></div>
+        <div class="section-label">DUA • LOVE • BROTHERHOOD</div>
+        <h2>May Your Next Chapter Be <span>Extraordinary</span></h2>
+        <p>May Allah protect you, guide you toward what is best, open doors of halal success, and place peace and happiness in your heart. Ameen. 🤲</p>
+        <div class="stars-row">✦ ✧ ✦ ✧ ✦</div>
+      </div>
+    </section>
+
+    <footer>20 • AUGUST • DANISH KHAN <span>♥</span></footer>
+  </main>
+
+  <div id="effects"></div>
+  <div class="cake hidden" id="cake">
+    <div class="cake-title">🎂 Make a wish, Danish!</div>
+    <div class="cake-body"><div class="icing"></div><div class="candle"><i></i></div></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
