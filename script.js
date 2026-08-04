@@ -1,99 +1,149 @@
-/* =====================================================
-   DANISH KHAN — PREMIUM BIRTHDAY WEBSITE V2.0
-===================================================== */
+/* =========================================================
+   DANISH KHAN — PREMIUM BIRTHDAY WEBSITE
+   Complete script.js
+========================================================= */
 
+"use strict";
 
-/* ================= COUNTDOWN ================= */
+/* =========================================================
+   ELEMENTS
+========================================================= */
 
 const countdownScreen = document.getElementById("countdownScreen");
+const birthdayWebsite = document.getElementById("birthdayWebsite");
 
 const daysElement = document.getElementById("days");
 const hoursElement = document.getElementById("hours");
 const minutesElement = document.getElementById("minutes");
 const secondsElement = document.getElementById("seconds");
 
-const countdownText =
-  document.getElementById("countdownText");
+const countdownText = document.getElementById("countdownText");
 
-const birthdayWebsite =
-  document.getElementById("birthdayWebsite");
+const gift = document.getElementById("gift");
+const giftText = document.getElementById("giftText");
+
+const surpriseButton = document.getElementById("surpriseButton");
+const fireworkButton = document.getElementById("fireworkButton");
+
+const floatingItems = document.getElementById("floatingItems");
+
+const canvas = document.getElementById("fireworks");
+
+const nextButton = document.getElementById("next");
+const previousButton = document.getElementById("previous");
+const dotsContainer = document.getElementById("dots");
+
+const popup = document.getElementById("popup");
+const closePopup = document.getElementById("closePopup");
+const popupWish = document.getElementById("popupWish");
+
+const voiceButton = document.getElementById("voiceButton");
 
 
-/*
-   20 August
-   Month 7 = August because JavaScript months
-   start from 0.
-*/
+/* =========================================================
+   SAFE HELPERS
+========================================================= */
 
-function getNextBirthday() {
-
-  const now = new Date();
-
-  let year = now.getFullYear();
-
-  let birthday =
-    new Date(year, 7, 20, 0, 0, 0);
-
-  if (now >= birthday) {
-
-    birthday =
-      new Date(year + 1, 7, 20, 0, 0, 0);
-
-  }
-
-  return birthday;
-
+function exists(element) {
+    return element !== null && element !== undefined;
 }
 
 
-let birthdayDate =
-  getNextBirthday();
+/* =========================================================
+   BIRTHDAY DATE
+========================================================= */
 
+function getNextBirthday() {
+
+    const now = new Date();
+
+    let year = now.getFullYear();
+
+    /*
+       JavaScript months:
+       January = 0
+       August = 7
+    */
+
+    let birthday = new Date(
+        year,
+        7,
+        20,
+        0,
+        0,
+        0
+    );
+
+    if (now >= birthday) {
+
+        birthday = new Date(
+            year + 1,
+            7,
+            20,
+            0,
+            0,
+            0
+        );
+
+    }
+
+    return birthday;
+}
+
+
+let birthdayDate = getNextBirthday();
+
+
+/* =========================================================
+   COUNTDOWN
+========================================================= */
 
 function updateCountdown() {
 
-  const now = new Date();
+    const now = new Date();
 
-  const difference =
-    birthdayDate - now;
-
-
-  /* Birthday reached */
-
-  if (difference <= 0) {
-
-    openBirthdayWebsite();
-
-    return;
-
-  }
+    let difference =
+        birthdayDate.getTime() -
+        now.getTime();
 
 
-  const days =
-    Math.floor(
-      difference /
-      (1000 * 60 * 60 * 24)
+    if (difference <= 0) {
+
+        if (exists(daysElement))
+            daysElement.textContent = "00";
+
+        if (exists(hoursElement))
+            hoursElement.textContent = "00";
+
+        if (exists(minutesElement))
+            minutesElement.textContent = "00";
+
+        if (exists(secondsElement))
+            secondsElement.textContent = "00";
+
+        openBirthdayWebsite();
+
+        return;
+    }
+
+
+    const days = Math.floor(
+        difference /
+        (1000 * 60 * 60 * 24)
     );
 
 
-  const hours =
-    Math.floor(
-      (difference /
-        (1000 * 60 * 60)) %
-        24
+    const hours = Math.floor(
+        (difference /
+            (1000 * 60 * 60)) % 24
     );
 
 
-  const minutes =
-    Math.floor(
-      (difference
-// FORCE OPEN AFTER COUNTDOWN
-setTimeout(() => {
-    countdownScreen.classList.add("hide");
+    const minutes = Math.floor(
+        (difference /
+            (1000 * 60)) % 60
+    );
 
-    setTimeout(() => {
-        birthdayWebsite.classList.add("show");
-        startBirthdayEffects();
-    }, 900);
 
-}, 5000);
+    const seconds = Math.floor(
+        (
