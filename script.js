@@ -87,3 +87,13 @@ function updateCountdown() {
   const minutes =
     Math.floor(
       (difference
+// FORCE OPEN AFTER COUNTDOWN
+setTimeout(() => {
+    countdownScreen.classList.add("hide");
+
+    setTimeout(() => {
+        birthdayWebsite.classList.add("show");
+        startBirthdayEffects();
+    }, 900);
+
+}, 5000);
